@@ -1,7 +1,7 @@
 // src/services/authService.js
 import axios from "axios";
 
-const API_URL = "http://localhost:4000/api/auth"; // backend base URL
+const API_URL = `${import.meta.env.VITE_API_BASE_URL}/auth`; // backend base URL
 
 // Register
 export const registerUser = async (name, email, password) => {
